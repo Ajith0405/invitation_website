@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1781145046585,
+    "name": "Praveen Kumar",
+    "relation": "Friend (Groom)",
+    "message": "Congratulations on your beautiful wedding. May your union be filled with lasting love and harmonious companionship.",
+    "timestamp": "June 11, 2026"
+  },
+  {
+    "id": 1781144879767,
+    "name": "Kumar",
+    "relation": "Well Wisher",
+    "message": "Congratulations on officially tying the knot. May your life be full of love, laughter, and many, many date nights.",
+    "timestamp": "June 11, 2026"
+  },
+  {
+    "id": 1781144676536,
+    "name": "Kuberan",
+    "relation": "Friend (Groom)",
+    "message": "Wishing you a lifetime of love, laughter, and endless adventures together. Congratulations!",
+    "timestamp": "June 11, 2026"
+  },
+  {
+    "id": 1,
+    "name": "Ramesh & Family",
+    "relation": "Family",
+    "message": "Wishing Ajith and Rishivindhiya a lifetime of love, happiness, and prosperity together! Looking forward to the Mugurtham.",
+    "timestamp": "June 10, 2026"
+  },
+  {
+    "id": 2,
+    "name": "Shruti Sen",
+    "relation": "Friend (Bride)",
+    "message": "Congratulations Rishi! You make such a stunning bride. So happy for you and Ajith. Wishing you the absolute best chapter ahead!",
+    "timestamp": "June 09, 2026"
+  },
+  {
+    "id": 3,
+    "name": "Karthik Raja",
+    "relation": "Colleague (Groom)",
+    "message": "Double coding power now! Congratulations Ajith bro, and welcome Rishivindhiya. Happy married life to you both!",
+    "timestamp": "June 08, 2026"
+  }
+]
