@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { Code, BookOpen, User, Briefcase } from "lucide-react";
+import groomImg from "../assets/groom.jpg";
+import brideImg from "../assets/bride.jpg";
 
 // Canvas for Groom code particles
 function GroomCanvas() {
@@ -235,21 +237,8 @@ export default function Introduction() {
             <div className="relative z-10 flex flex-col items-center">
               {/* Photo Frame with Vector SVG placeholder */}
               <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-brand-gold/40 p-1 bg-brand-maroon-dark overflow-hidden mb-6 flex items-center justify-center shadow-lg">
-                {/* Groom SVG Avatar */}
-                <svg className="w-full h-full text-brand-gold/80 p-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="0.5" strokeDasharray="3 3"/>
-                  {/* Styled minimalist face sketch */}
-                  <path d="M50 20C40 20 36 26 36 34C36 40 40 46 50 46C60 46 64 40 64 34C64 26 60 20 50 20Z" fill="currentColor" opacity="0.15"/>
-                  {/* Traditional South Indian Groom Haircut/Kudumi line */}
-                  <path d="M50 18C44 18 39 21 37 25C40 25 43 23 50 23C57 23 60 25 63 25C61 21 56 18 50 18Z" fill="currentColor"/>
-                  {/* Silhouette shoulders */}
-                  <path d="M22 80C22 65 32 55 50 55C68 55 78 65 78 80" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-                  {/* Traditional veshti border line */}
-                  <path d="M44 55V80" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
-                  <path d="M56 55V80" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
-                  {/* Golden Chain representation */}
-                  <path d="M42 58C45 61 55 61 58 58" stroke="currentColor" strokeWidth="1"/>
-                </svg>
+                {/* Groom Photo */}
+                <img src={groomImg} alt="S. Ajith" className="w-full h-full object-cover rounded-full" />
                 <div className="absolute top-2 right-2 text-brand-gold/30">
                   <Code className="w-5 h-5 animate-pulse" />
                 </div>
@@ -257,7 +246,7 @@ export default function Introduction() {
 
               {/* Information */}
               <h3 className="text-2xl md:text-3xl font-serif text-brand-gold font-bold mb-1 tracking-wide">
-                S. Ajith, B.Tech
+                S. Ajith, <span className="text-lg md:text-xl font-sans font-normal opacity-90">B.Tech</span>
               </h3>
               <p className="text-brand-blush-light/85 font-sans text-sm tracking-wider uppercase flex items-center gap-1.5 mb-6">
                 <Briefcase className="w-4 h-4 text-brand-gold" />
@@ -267,7 +256,7 @@ export default function Introduction() {
               <div className="h-[1px] w-24 bg-brand-gold/30 mb-6" />
 
               <p className="text-brand-champagne/80 font-sans text-sm text-center leading-relaxed max-w-sm">
-                Combining logic, code, and structured thinking with a warm heart. S. Ajith builds digital worlds by day and looks forward to starting his ultimate partnership.
+                Combining logic, code, and structured thinking with a warm heart. He builds digital worlds by day and looks forward to starting his ultimate partnership.
               </p>
             </div>
             
@@ -277,7 +266,7 @@ export default function Introduction() {
                 &lt; Developer /&gt;
               </span>
               <span className="text-[10px] font-mono px-2.5 py-1 rounded-full bg-brand-gold/10 border border-brand-gold/20 text-brand-gold">
-                &#123; Javascript &#125;
+                &#123; Full Stack &#125;
               </span>
             </div>
           </TiltCard>
@@ -290,26 +279,8 @@ export default function Introduction() {
             <div className="relative z-10 flex flex-col items-center">
               {/* Photo Frame with Vector SVG placeholder */}
               <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-brand-maroon/20 p-1 bg-brand-blush-light overflow-hidden mb-6 flex items-center justify-center shadow-lg">
-                {/* Bride SVG Avatar */}
-                <svg className="w-full h-full text-brand-maroon/70 p-2" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="0.5" strokeDasharray="3 3"/>
-                  {/* Silhouette face */}
-                  <path d="M50 22C41 22 37 27 37 35C37 41 41 47 50 47C59 47 63 41 63 35C63 27 59 22 50 22Z" fill="currentColor" opacity="0.1"/>
-                  {/* Traditional hair line with side pleats and flower decorations */}
-                  <path d="M50 20C43 20 38 23 37 28C39 27 43 25 50 25C57 25 61 27 63 28C62 23 57 20 50 20Z" fill="currentColor"/>
-                  {/* South Indian Bridal Jasmine flower line on side of head */}
-                  <circle cx="34" cy="28" r="3" fill="#FAF8F5" stroke="currentColor" strokeWidth="0.5"/>
-                  <circle cx="32" cy="34" r="3" fill="#FAF8F5" stroke="currentColor" strokeWidth="0.5"/>
-                  <circle cx="33" cy="40" r="3" fill="#FAF8F5" stroke="currentColor" strokeWidth="0.5"/>
-                  {/* Bridal Bindi / Nettipattam represent */}
-                  <circle cx="50" cy="27" r="1.5" fill="#D4AF37"/>
-                  <path d="M50 22V25" stroke="#D4AF37" strokeWidth="1"/>
-                  {/* Shoulders */}
-                  <path d="M22 80C22 65 32 55 50 55C68 55 78 65 78 80" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-                  {/* Traditional Sari pleat outline */}
-                  <path d="M38 58C43 65 47 72 50 80" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M42 56C47 63 52 70 54 80" stroke="#D4AF37" strokeWidth="1"/>
-                </svg>
+                {/* Bride Photo */}
+                <img src={brideImg} alt="G. Rishivindhiya" className="w-full h-full object-cover rounded-full" />
                 <div className="absolute top-2 right-2 text-brand-maroon/30">
                   <span className="text-xl animate-pulse">✿</span>
                 </div>
@@ -317,7 +288,7 @@ export default function Introduction() {
 
               {/* Information */}
               <h3 className="text-2xl md:text-3xl font-serif text-brand-maroon font-bold mb-1 tracking-wide">
-                G. Rishivindhiya, M.Sc
+                G. Rishivindhiya, <span className="text-lg md:text-xl font-sans font-normal opacity-90">M.Sc</span>
               </h3>
               <p className="text-brand-maroon/75 font-sans text-sm tracking-wider uppercase flex items-center gap-1.5 mb-6">
                 <BookOpen className="w-4 h-4 text-brand-maroon" />
@@ -327,7 +298,7 @@ export default function Introduction() {
               <div className="h-[1px] w-24 bg-brand-maroon/20 mb-6" />
 
               <p className="text-brand-maroon-dark/75 font-sans text-sm text-center leading-relaxed max-w-sm">
-                A graceful blends of intelligence, ethics, and cultural values. G. Rishivindhiya brings precision, kindness, and light, excited to embark on this beautiful new journey.
+                A graceful blend of intelligence, ethics, and cultural values. She brings precision, kindness, and light, excited to embark on this beautiful new journey.
               </p>
             </div>
 

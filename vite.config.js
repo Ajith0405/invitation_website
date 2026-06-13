@@ -25,6 +25,7 @@ const getRequestBody = (req) => {
 
 // https://vite.dev/config/
 export default defineConfig({
+  assetsInclude: ['**/*.mpeg'],
   server: {
     host: true,
     watch: {

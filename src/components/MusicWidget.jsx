@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Volume2, VolumeX, Play, Pause, Music } from "lucide-react";
+import backgroundMusic from "../assets/audio/backgroundsong.mpeg";
 
 export default function MusicWidget({ playRequested, onMusicStateChange }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -15,8 +16,8 @@ export default function MusicWidget({ playRequested, onMusicStateChange }) {
   const mohanamScale = [261.63, 293.66, 329.63, 392.00, 440.00, 523.25, 587.33, 659.25, 783.99, 880.00];
 
   useEffect(() => {
-    // Try loading a high-quality soft wedding instrumental
-    const audio = new Audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3");
+    // Load local soft wedding instrumental
+    const audio = new Audio(backgroundMusic);
     audio.loop = true;
     audio.volume = volume;
     audioRef.current = audio;
